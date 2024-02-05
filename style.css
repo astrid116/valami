@@ -34,9 +34,10 @@ a:hover {
 
 :root {
     --c: black;
+    --d: ;
 }
 
-body:has(input:checked) {
+body:has(#checkbox:checked) {
     --c: red;
 }
 
