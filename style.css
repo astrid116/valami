@@ -34,7 +34,6 @@ a:hover {
 
 :root {
     --c: black;
-    --d: ;
 }
 
 body:has(#checkbox:checked) {
@@ -45,8 +44,22 @@ h1 {
     color: var(--c);
 }
 
-@media only screen and (max-width: 414px) {
+#settings {
+    font-weight: bold;
+    font-size: 40px;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
     header a {
         color: red;
+    }
+    header {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    #settings {
+        display: none;
     }
 }
