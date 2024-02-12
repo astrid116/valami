@@ -17,6 +17,12 @@ header a{
     font-size: 1.6em;
     font-weight: bold;
 }
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 a:visited {
     color: black;
@@ -36,7 +42,7 @@ a:hover {
     --c: black;
 }
 
-body:has(input:checked) {
+body:has(#checkbox:checked) {
     --c: red;
 }
 
@@ -44,8 +50,19 @@ h1 {
     color: var(--c);
 }
 
-@media only screen and (max-width: 414px) {
+#settings {
+    font-weight: bold;
+    font-size: 40px;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
     header a {
         color: red;
     }
+    header {
+        bottom: 0;
+    }
+}
+@media screen and (min-width: 600px) {
 }
